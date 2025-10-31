@@ -2,6 +2,8 @@
  * Tool definitions for the AI chat agent
  * Tools can either require human confirmation or execute automatically
  */
+import OpenAI from "openai";
+const client = new OpenAI();
 import { tool, type ToolSet } from "ai";
 import { z } from "zod/v3";
 
